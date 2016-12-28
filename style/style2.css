@@ -1,0 +1,121 @@
+
+
+.contenedor {
+
+      max-width: 1000px;
+      margin:auto;      
+
+}
+
+.notas{
+
+            display: flex;
+
+
+} 
+
+.notas article {
+	               
+	                 padding: 10px;
+	                 margin:10px;
+	                 border:1px solid gray;
+	                 flex:1;
+}
+
+.img-responsive {
+
+	 max-width:100%;
+}
+
+.mayores
+{
+	flex-grow:2 !important;
+}
+
+
+
+.test {
+
+	font-size: 80px;
+
+}
+.test:after { /*Se puede poner el before con el signo pesos */
+	content:"00";
+	font-size: 20px;
+	position: relative;
+	top:-40px;
+	left: -20px;
+}
+
+.test:before { /*Se pone asi porque tienen la misma propiedad*/
+	content:"$";
+	height:3px;
+	width:30px;
+	display: inline-block; /*Por defecto viene con inline es decir no permite ni ancho ni alto*/
+     position:relative;
+	top:1px;
+
+}
+
+.oferta{
+		max-width: 30%;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+		position: relative;
+	}
+
+
+	.oferta .margen{
+		margin: 10px;
+	}
+
+	.oferta-tag{
+		background: red;
+		padding: 5px 10px;
+		position: absolute;
+		top: 20px;
+		left: 0;
+		color: white;
+		text-transform: uppercase;
+	}
+
+	.off{
+		background: green;
+		display: flex;
+		width: 70px;
+		height: 70px;
+		position: absolute;
+		top: 100px;
+		right: 20px;
+		color: white;
+		text-transform: uppercase;
+		border-radius: 50%;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.price{
+		display: block;
+		text-align: center;
+		font-size: 40px;
+		font-family: montserrat;
+		color: green;
+	}
+
+	.price:after{
+		content: "00";
+		font-size: 19px;
+		position: relative;
+		top: -16px;
+	}
+
+
+
+	.price:before{
+		content: "$";
+		font-size: 19px;
+		position: relative;
+		top: -6px;
+	}
+

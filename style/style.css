@@ -1,0 +1,84 @@
+section {
+	
+	  width: 500px;
+	  border: 2px solid black;
+	  height:500px;
+	  /*Propiedades Flex*/
+	  display:flex;
+	  justify-content: space-between;
+	  /*justify-content:space-between; /*space-around;*/ /*center;*/
+	  flex-wrap: wrap;  /*no-wrap  wrap-reverse*/;
+	  align-item:flex-end; /*Arranca desde el final del contenedor*/
+	  align-item:center; /*Centra el contenido verticalmente*/ /*Align item funciona para una sola linea*/
+      align-item: stretch;
+      align-item: baseline;  /*Tomar el texto de la cajita y alinear el texto de las diferentes cajas a esa altura*/;
+      flex-direction:column; /*Puedo trabajar tanto en fila como columna - quedan los items uno abajo del otro*/ 
+      flex-direction: row-reverse; /*Da vuelta la fila*/
+      flex-direction: column-reverse;/*Invierte el orden de la columna*/
+      align-content: flex-start; /*Utilizado para multiples lineas  flex-start flex-end y center*/
+      flex-flow: row wrap; /*Como primer parametro si quiero que se comporte como fila y columna y con el segundo si es wrap o no wrap*/
+}
+
+div {
+	
+	    flex:1; /*setea para achicar y para agrandar*/
+	   /*flex-grow:1 ; /*Incrementa proporcionalmente para alcanzar a su padre*/
+	   width:50px;  /*50px */;	 /*Sin el width se tiene el contenido real*/
+	   flex-basis: 300px; /*Es como el max-width del modelo de cajas*/
+	   flex-shrink: 2; /*Achica funciona al reves que el flex-grow*/
+	   background: red;
+	   color:white;
+	   font-size: 30px;
+	   }
+
+.uno {
+
+	    font-size: 50px;
+}
+
+.dos {
+
+	    flex-grow:2;
+	    flex-shrink:3;
+	    background: blue;
+}
+
+/*Nuevo comienzo*/
+
+*{
+
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+header {
+
+	  background:yellow;
+	  height: 60px;
+	  padding: 20px;
+	  display: flex;
+	  justify-content: space-between;
+	  align-items:center;
+}
+
+ul {
+
+   list-style: none;
+   display: flex;
+
+}
+
+ul li {
+
+	     margin:0 10px;
+}
+
+.list {                         /*Para cambiar el orden de los elementos de la lista - Como va en home en home lo puso a lo ultimo*/
+	            order:4;
+}
+
+.list a {
+
+	            text-decoration: 
+}

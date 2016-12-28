@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+   <head>
+   <meta charset="utf-8">
+   <title></title>
+   <style type="text/css">
+          .test {
+
+          	        font-size: 80px;
+
+          }
+          .test:after { /*Se puede poner el before con el signo pesos */
+                         content:"99";
+                         font-size: 20px;
+                         position: relative;
+                         top:-40px;
+                         left: -20px;
+          }
+
+          .test2 {
+          	         font-size: 60px;
+
+          }
+
+          .test2:after, .test2:before { /*Se pone asi porque tienen la misma propiedad*/
+                          content:"";
+                          height:3px;
+                          width:30px;
+                          display: inline-block; /*Por defecto viene con inline es decir no permite ni ancho ni alto*/
+                          background: red;
+                          position:relative;
+                          top:-16px;
+
+          }
+   </style>
+   </head>
+    <body>
+          <span class="test">
+                  200
+          </span>
+
+          <br/>
+
+          <span class="test2">
+                Hola
+          </span>
+    </body>
+</html>
